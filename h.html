@@ -1,0 +1,83 @@
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart.com</title>
+    <link rel="stylesheet" href="h.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+    <header>
+        <h2 class="logo">SwiftCart.com</h2>
+        <nav class="navigation">
+            <a href="login.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup" id="loginButton">Login</button>
+        </nav>
+    </header>
+
+    <section> 
+        <div class="Login-box">
+            <form id="loginForm">
+                <h1>Login</h1>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forget">
+                    <label><input type="checkbox">Remember me </label>
+                    <a href="#">Forget Password?</a>
+                </div>
+
+                <button type="button" class="btn" id="loginSubmit" onclick="func()">LogIn</button>
+
+                <div class="register-link">
+                    <p>Don't have any account? <a href="#" id="signupLink">register</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="h.js">
+
+        function func(){
+            var email= document.getElementById("username").value;
+        var password= document .getElementById("password").value;
+        if(email=="tansin@gmail.com" && password=="1234")
+        {    
+            alert("sucessfull")
+            window.location.assign("login.html")
+        }
+        else{
+            alert("not sucessfull")
+        }
+        }
+        
+    </script>
+    <script type="module" src="https://unpkg.com/ionicon"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        
+
+        
+    </script>
+</body>
+</html>
+
+
